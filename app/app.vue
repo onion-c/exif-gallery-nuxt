@@ -9,7 +9,7 @@ onPrehydrate(() => {
   const oldClass = Array.from(document.body.classList).filter(className => className.startsWith('theme-'))
   if (oldClass.length)
     document.body.classList.remove(...oldClass)
-  document.body.classList.add(`theme-${value || 'blue'}`)
+  document.body.classList.add(`theme-${value || 'zinc'}`)
 })
 
 const config = useRuntimeConfig()
