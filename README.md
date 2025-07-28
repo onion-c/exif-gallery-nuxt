@@ -11,7 +11,7 @@ A full-stack photo album solution that integrates AI intelligent processing, bro
 ## Features
 
 - 📷 Image upload and display with [`hubBlob()`](http://hub.nuxt.com/docs/storage/blob)
-- 🌐 Cloud Storage: Blob powered by NuxtHub (cloudflare R2)
+- 🌐 Cloud Storage: Blob powered by NuxtHub (cloudflare R2) 11
 - 🤖 AI Integration: Support for OpenAI and Gemini for intelligent image processing
 - 🗜️ Image Compression: Multiple format support (JPEG, WebP, AVIF) with JSQuash
 - 🎨 Modern UI: Beautiful components with shadcn-vue and inspira-ui
