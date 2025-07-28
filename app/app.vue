@@ -2,7 +2,8 @@
 const { theme } = useTheme(true)
 const colorMode = useColorMode()
 const isDark = computed(() => colorMode.value === 'dark')
-const themeColor = computed(() => baseColors.find(c => c.name === theme.value)?.activeColor[isDark.value ? 'dark' : 'dark'] || theme.value)
+const colorMode = useColorMode()
+colorMode.preference = 'dark'
 
 onPrehydrate(() => {
   const value = localStorage.getItem('shadcn-theme')
