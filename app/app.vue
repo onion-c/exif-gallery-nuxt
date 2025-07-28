@@ -1,8 +1,6 @@
 <script setup lang="ts">
 const { theme } = useTheme(true)
 const colorMode = useColorMode()
-const isDark = computed(() => colorMode.value === 'dark')
-const colorMode = useColorMode()
 colorMode.preference = 'dark'
 
 onPrehydrate(() => {
