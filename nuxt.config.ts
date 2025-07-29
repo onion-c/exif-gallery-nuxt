@@ -37,9 +37,10 @@ export default defineNuxtConfig({
   css: [
     '@unocss/reset/tailwind.css',
   ],
-  colorMode: {
-    classSuffix: '',
-  },
+  colorMode: {
+    classSuffix: '',
+    preference: 'dark', // 设置默认为深色模式
+  },
   experimental: {
     viewTransition: true,
   },
