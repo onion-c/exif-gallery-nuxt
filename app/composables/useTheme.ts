@@ -2,12 +2,7 @@ export function useTheme(init = true) {
   const theme = useLocalStorage('shadcn-theme', 'zinc')
   const radius = useLocalStorage('shadcn-radius', '0')
   const disable3DCard = useLocalStorage('disable-3d-card', true)
-  const colorMode = useColorMode() 
-
-    if (init && !import.meta.env.SSR) {
-    if (!localStorage.getItem('nuxt-color-mode')) {
-      colorMode.preference = 'dark'
-    }
+  const colorMode = useColorMode('dark') 
 
   if (init && !import.meta.env.SSR) {
     watch(theme, (value) => {
