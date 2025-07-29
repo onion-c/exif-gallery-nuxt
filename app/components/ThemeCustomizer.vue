@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 const { theme, radius, disable3DCard } = useTheme()
-const colorMode = 'dark'
+const colorMode = useColorMode()
+const isDark = computed(() => colorMode.value === 'dark')
 const switchLocalePath = useSwitchLocalePath()
 const { locale } = useI18n()
 
