@@ -1,7 +1,8 @@
 <script setup lang="ts">
 const { theme } = useTheme(true)
 const colorMode = useColorMode()
-colorMode.preference = 'dark'
+const isDark = computed(() => colorMode.value === 'dark')
+const themeColor = computed(() => baseColors.find(c => c.name === theme.value)?.activeColor[isDark.value ? 'dark' : 'dark'] || theme.value)
 
 onPrehydrate(() => {
   const value = localStorage.getItem('shadcn-theme')
